@@ -6,6 +6,8 @@ on:
     branches: [cryptokit-gcm]
     paths:
       - .github/workflows/ios-gcm-test.yml
+      - iosApp/iosAppTests/**
+      - iosApp/iosApp.xcodeproj/project.pbxproj
 
 permissions:
   contents: read
