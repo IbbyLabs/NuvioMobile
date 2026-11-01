@@ -2,6 +2,10 @@ name: AES-GCM Tests
 
 on:
   workflow_dispatch:
+  push:
+    branches: [cryptokit-gcm]
+    paths:
+      - .github/workflows/ios-gcm-test.yml
 
 permissions:
   contents: read
