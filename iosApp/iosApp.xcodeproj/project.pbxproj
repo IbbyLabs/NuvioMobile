@@ -14,6 +14,7 @@
 		7397CF462F80FE3A00AC0F84 /* MPVKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6A7B8C9D0E1F2 /* MPVKit */; };
 		C775C0E7A7F486CE63FEB866 /* SubtitlePlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2673A436033CC351728D43 /* SubtitlePlaybackTests.swift */; };
 		A7E5C0DE1A2B3C4D5E6F7081 /* AesGcmProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5C0DE1A2B3C4D5E6F7082 /* AesGcmProviderTests.swift */; };
+		A7E5C0DE1A2B3C4D5E6F7091 /* AesGcmBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5C0DE1A2B3C4D5E6F7092 /* AesGcmBridgeTests.swift */; };
 		E13BB6F776079BECB1C385AE /* styled.ass in Resources */ = {isa = PBXBuildFile; fileRef = 392AF87E6B301A2EF4CDCAC6 /* styled.ass */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		0A1B2C3D4E5F60718293A4B5 /* DownloadsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DownloadsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2673A436033CC351728D43 /* SubtitlePlaybackTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SubtitlePlaybackTests.swift; sourceTree = "<group>"; };
 		A7E5C0DE1A2B3C4D5E6F7082 /* AesGcmProviderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AesGcmProviderTests.swift; sourceTree = "<group>"; };
+		A7E5C0DE1A2B3C4D5E6F7092 /* AesGcmBridgeTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AesGcmBridgeTests.swift; sourceTree = "<group>"; };
 		392AF87E6B301A2EF4CDCAC6 /* styled.ass */ = {isa = PBXFileReference; includeInIndex = 1; path = styled.ass; sourceTree = "<group>"; };
 		75DECEA6A716ACCF256DD05C /* SubtitleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubtitleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E7C6938899908633B6C313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -183,6 +185,7 @@
 			children = (
 				1C2673A436033CC351728D43 /* SubtitlePlaybackTests.swift */,
 				A7E5C0DE1A2B3C4D5E6F7082 /* AesGcmProviderTests.swift */,
+				A7E5C0DE1A2B3C4D5E6F7092 /* AesGcmBridgeTests.swift */,
 			);
 			name = iosAppTests;
 			path = iosAppTests;
@@ -362,6 +365,7 @@
 			files = (
 				C775C0E7A7F486CE63FEB866 /* SubtitlePlaybackTests.swift in Sources */,
 				A7E5C0DE1A2B3C4D5E6F7081 /* AesGcmProviderTests.swift in Sources */,
+				A7E5C0DE1A2B3C4D5E6F7091 /* AesGcmBridgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

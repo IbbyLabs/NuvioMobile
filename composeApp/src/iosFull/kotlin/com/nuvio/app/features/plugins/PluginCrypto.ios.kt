@@ -106,7 +106,7 @@ internal fun pluginPbkdf2(
 }
 
 @OptIn(ExperimentalForeignApi::class)
-internal fun pluginAesEncrypt(
+fun pluginAesEncrypt(
     mode: String,
     key: ByteArray,
     iv: ByteArray,
@@ -175,7 +175,7 @@ internal fun pluginAesEncrypt(
 }
 
 @OptIn(ExperimentalForeignApi::class)
-internal fun pluginAesDecrypt(
+fun pluginAesDecrypt(
     mode: String,
     key: ByteArray,
     iv: ByteArray,
