@@ -129,7 +129,6 @@ enum {
     kCCModeXTS = 10,
     kCCModeRC4 = 11,
     kCCModeCFB128 = 12,
-    kCCModeGCM = 13,
     kCCModeCCM = 14,
 };
 
@@ -156,32 +155,6 @@ CCCryptorStatus CCCryptorCreateWithMode(
     int numRounds,
     CCModeOptions options,
     CCCryptorRef *cryptorRef
-);
-
-CCCryptorStatus CCCryptorGCMAddAAD(
-    CCCryptorRef cryptorRef,
-    const void *aData,
-    size_t aDataLen
-);
-
-CCCryptorStatus CCCryptorGCMEncrypt(
-    CCCryptorRef cryptorRef,
-    const void *dataIn,
-    size_t dataInLength,
-    void *dataOut
-);
-
-CCCryptorStatus CCCryptorGCMDecrypt(
-    CCCryptorRef cryptorRef,
-    const void *dataIn,
-    size_t dataInLength,
-    void *dataOut
-);
-
-CCCryptorStatus CCCryptorGCMFinal(
-    CCCryptorRef cryptorRef,
-    void *tag,
-    size_t *tagLength
 );
 
 CCCryptorStatus CCCryptorRelease(
