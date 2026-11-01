@@ -35,5 +35,5 @@ jobs:
             -project iosApp/iosApp.xcodeproj \
             -scheme SubtitleTests \
             -destination "id=${udid}" \
-            -only-testing:SubtitleTests/AesGcmProviderTests \
+            -only-testing:SubtitleTests/AesGcmProviderTests -only-testing:SubtitleTests/AesGcmBridgeTests \
             CODE_SIGNING_ALLOWED=NO
