@@ -1,0 +1,33 @@
+name: AES-GCM Tests
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: xcode-27
+    timeout-minutes: 60
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_27.1.app/Contents/Developer
+      NUVIO_IOS_DISTRIBUTION: full
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v6
+      - run: touch local.properties
+      - run: ./scripts/prepare-ios-dependencies.sh
+      - name: Run AesGcmProviderTests
+        run: |
+          udid="$(xcrun simctl list devices available iPhone -j | python3 -c 'import json,sys; d=json.load(sys.stdin)["devices"]; print(next(x["udid"] for k in sorted(d, reverse=True) if "iOS" in k for x in d[k] if "iPhone" in x["name"]))')"
+          xcodebuild test \
+            -project iosApp/iosApp.xcodeproj \
+            -scheme SubtitleTests \
+            -destination "id=${udid}" \
+            -only-testing:iosAppTests/AesGcmProviderTests \
+            CODE_SIGNING_ALLOWED=NO
